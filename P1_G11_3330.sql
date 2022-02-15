@@ -10,7 +10,8 @@ CREATE TABLE [Checks]
 
 CREATE TABLE [Train_Stat]
 (
-	TrainID NOT NULL
+	TrainNum NOT NULL,
+	
 );
 
 CREATE TABLE [Train]
