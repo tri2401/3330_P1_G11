@@ -37,7 +37,7 @@ CREATE TABLE [Train_Avail]
 CREATE TABLE [Booked]
 (
 	[PassengerID] INTEGER NOT NULL
-	[TrainNum]	INTEGER
+	[TrainNum] INTEGER NOT NULL
 	[TicketType] VARCHAR(20)
 	[Status] VARCHAR(20)
 	CONSTRAINT (PK_PassengerID) PRIMARY KEY (PassengerID, TrainNum)
