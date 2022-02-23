@@ -15,7 +15,7 @@ CREATE TABLE [Train_Stat]
 
 CREATE TABLE [Train]
 (
-
+	[TrainID] INTEGER NOT NULL
 );
 
 CREATE TABLE [Train_Avail]
