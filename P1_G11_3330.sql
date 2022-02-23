@@ -42,6 +42,7 @@ CREATE TABLE [Booked]
 	[Status] VARCHAR(20)
 	CONSTRAINT (PK_PassengerID) PRIMARY KEY (PassengerID, TrainNum)
 	FOREIGN KEY(PassengerID) REFERENCES Passenger(passengerID)
+		ON DELETE NO ACTION ON UPDATE NO ACTION
 
 );
 
