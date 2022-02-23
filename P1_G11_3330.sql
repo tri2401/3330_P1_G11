@@ -10,8 +10,8 @@ CREATE TABLE [Checks]
 
 CREATE TABLE [Train_Stat]
 (
-	[TNum] INTEGER NOT NULL UNIQUE,
-	[TName] VCHAR(100) NOT NULL,
+	[TrainNum] INTEGER NOT NULL,
+	[TrainName] VCHAR(50) NOT NULL,
 	[BookDate] DATETIME,
 	[GSeatsAvail] INTEGER,
 	[GSeatsOcc] INTEGER,
@@ -19,8 +19,8 @@ CREATE TABLE [Train_Stat]
 	[PSeatsOcc] INTEGER,
 	[Location] VCHAR(160) NOT NULL,
 	[Platform] VCHAR(160),
-	CONSTRAINT [PK_TStat] PRIMARY KEY ([TNum], [TName]),
-	FOREIGN KEY  ([TName]) REFERENCES [Train] ([Name])
+	CONSTRAINT [PK_Train_Stat] PRIMARY KEY ([TrainNum], [TrainName]),
+	FOREIGN KEY  ([TrainName]) REFERENCES [Train] ([Name])
 		ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
@@ -28,29 +28,28 @@ CREATE TABLE [Train]
 (
 	[TrainID] INTEGER NOT NULL,
 	[Name] VARCHAR(50) NOT NULL,
-	[TicketPrice] INTEGER
-	[Source] INTEGER 
-	[Destination] VARCHAR(50)
-	[Available] VARCHAR(100) 	
-	[TicketType] VARCHAR(50) 
-	CONSTRAINT [PK_TrainID] PRIMARY KEY (TrainID);
+	[TicketPrice] INTEGER,
+	[Source] INTEGER,
+	[Destination] VARCHAR(50),
+	[Available] VARCHAR(100),
+	[TicketType] VARCHAR(50),
+	CONSTRAINT [PK_TrainID] PRIMARY KEY ([TrainID], [Name])
 );
 
 CREATE TABLE [Train_Avail]
 (
 	[TrainID] INTEGER NOT NULL,
 	[TrainAvail] VARCHAR(100) NOT NULL,
-	CONSTRAINT (PK_TrainIDAvail) PRIMARY KEY(TrainID, TrainAvail) 
-	FOREIGN KEY(TrainID) REFERENCES TRAIN(TrainID)
+	CONSTRAINT [PK_TrainIDAvail] PRIMARY KEY ([TrainID], [TrainAvail]),
+	FOREIGN KEY ([TrainID]) REFERENCES [Train] ([TrainID])
 		ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 CREATE TABLE [Train_Dest]
 (
 	[DTrainID] INTEGER NOT NULL,
-	[TDest] VCHAR(160) NOT NULL,
+	[TDest] VCHAR(50) NOT NULL,
 	CONSTRAINT [PK_TDest] PRIMARY KEY ([DTrainID], [TDest]),
 	FOREIGN KEY ([DTrainID]) REFERENCES [Train] ([TrainID])
 		ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-
