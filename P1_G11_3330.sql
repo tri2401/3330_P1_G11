@@ -34,6 +34,17 @@ CREATE TABLE [Train_Avail]
 		ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
+CREATE TABLE [Booked]
+(
+	[PassengerID] INTEGER NOT NULL
+	[TrainNum]	INTEGER
+	[TicketType] VARCHAR(20)
+	[Status] VARCHAR(20)
+	CONSTRAINT (PK_PassengerID) PRIMARY KEY (PassengerID, TrainNum)
+	FOREIGN KEY(PassengerID) REFERENCES Passenger(passengerID)
+
+);
+
 CREATE TABLE [Train_Dest]
 (
 
