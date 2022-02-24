@@ -1,5 +1,3 @@
-//Passenger, Checks
-
 CREATE TABLE [Passenger]
 (
     [PassengerID] INTEGER NOT NULL,
