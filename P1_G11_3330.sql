@@ -16,7 +16,7 @@ CREATE TABLE [Passenger]
 );
 
 CREATE TABLE [Checks]
-{
+(
     [PassengerID] INTEGER NOT NULL,
 	[TrainID] INTEGER NOT NULL,
     FOREIGN KEY ([PassengerID]) REFERENCES [Passenger]([PassengerID]),
