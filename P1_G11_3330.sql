@@ -1,3 +1,30 @@
+//Passenger, Checks
+
+CREATE TABLE [Passenger]
+(
+    [PassengerID] INTEGER NOT NULL,
+    [FName] VARCHAR(20) NOT NULL,
+    [LName] VARCHAR(20) NOT NULL,
+    [MI] VARCHAR(1),
+    [Age] INTEGER,
+    [StreetNum] INTEGER,
+    [Street] VARCHAR(50),
+    [City] VARCHAR(50),
+    [State] VARCHAR(20),
+    [ResStatus] VARCHAR(20),
+    [TicketType] VARCHAR(50),
+    [TrainID] INTEGER NOT NULL,
+    CONSTRAINT [PK_Passenger] PRIMARY KEY ([PassengerID])
+);
+
+CREATE TABLE [Checks]
+(
+    [PassengerID] INTEGER NOT NULL,
+	[TrainID] INTEGER NOT NULL,
+    FOREIGN KEY ([PassengerID]) REFERENCES [Passenger]([PassengerID]),
+    FOREIGN KEY ([TrainID]) REFERENCES [Train]([TrainID])
+);
+
 CREATE TABLE [Train_Stat]
 (
 	[TrainNum] INTEGER NOT NULL,
