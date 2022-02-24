@@ -1,3 +1,13 @@
+CREATE TABLE [Passenger]
+(
+
+);
+
+CREATE TABLE [Checks]
+(
+
+);
+
 CREATE TABLE [Train_Stat]
 (
 	[TrainNum] INTEGER NOT NULL,
