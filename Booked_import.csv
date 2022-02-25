@@ -1,5 +1,4 @@
-﻿PassengerID,TrainID,TicketType,Status
-264816896,3,Premium,confirmed
+﻿264816896,3,Premium,confirmed
 240471168,2,General,waitlist
 285200976,4,Premium,waitlist
 285200976,2,Premium,confirmed

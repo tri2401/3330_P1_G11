@@ -1,4 +1,3 @@
-TrainID,Name, Source, Destination,GenTicketPrice,PremTicketPrice
 1,Orient Express, Paris,Istanbul,600,800
 2,Flying Scotsman, Edinburgh,London,3500,4000
 3,Golden Arrow, Victoria,Dover,860,980

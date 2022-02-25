@@ -1,5 +1,4 @@
-﻿PassengerID,FName,LName,Age,Address,City,County,ResStatus,TicketType,TrainID
-264816896,James,Butt,25,6649 N Blue Gum St,New Orleans,Orleans,confirmed,Premium,3
+﻿264816896,James,Butt,25,6649 N Blue Gum St,New Orleans,Orleans,confirmed,Premium,3
 240471168,Josephine,Darakjy,56,4 B Blue Ridge Blvd,Brighton,Livingston,waitlist,General,2
 285200976,Art,Venere,15,8 W Cerritos Ave #54,Bridgeport,Gloucester,confirmed,Premium,4
 309323096,Lenna,Paprocki,78,639 Main St,Anchorage,Anchorage,waitlist,General,1
