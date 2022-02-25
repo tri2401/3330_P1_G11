@@ -1,0 +1,5 @@
+TrainNum, TrainName,BookDate,GSeatsAvail,GSeatsOcc,PSeatsAvail,PSeatsOcc,Location,Platform
+4, Orient Express,19/02/2022,10,0,10,0,Istanbul,1A
+1, Flying Scottsman,20/02/2022,5,5,8,2,London,3A
+2, Guwahati Express,21/02/2022,6,4,7,3,Shanghai,4B
+3, Golden Chariot,21/02/2022,3,7,6,4,Goa,6B

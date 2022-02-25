@@ -1,9 +1,8 @@
 CREATE TABLE [Passenger]
 (
-    [PassengerID] INTEGER NOT NULL,
+    [PassengerID] BIGINT NOT NULL,
     [FName] VARCHAR(50) NOT NULL,
     [LName] VARCHAR(50) NOT NULL,
-    [MI] VARCHAR(1),
     [Age] INTEGER,
     [Address] VARCHAR (50),
     [City] VARCHAR(50),
