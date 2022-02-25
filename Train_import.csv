@@ -1,6 +1,6 @@
 TrainID,Name, Source, Destination,GenTicketPrice,PremTicketPrice
-1, Orient Express , Paris,Istanbul,600,800
-2, Flying Scotsman, Edinburgh,London,3500,4000
-3, Golden Arrow , Victoria,Dover,860,980
-4, Golden Chariot, Bangalore,Goa,3800,4300
-5, Maharaja Express, Delhi,Mumbai,4510,5980
+1,Orient Express, Paris,Istanbul,600,800
+2,Flying Scotsman, Edinburgh,London,3500,4000
+3,Golden Arrow, Victoria,Dover,860,980
+4,Golden Chariot, Bangalore,Goa,3800,4300
+5,Maharaja Express, Delhi,Mumbai,4510,5980
