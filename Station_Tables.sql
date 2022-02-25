@@ -10,7 +10,8 @@ CREATE TABLE [Passenger]
     [ResStatus] VARCHAR(20),
     [TicketType] VARCHAR(50),
     [TrainID] INTEGER NOT NULL,
-    CONSTRAINT [PK_Passenger] PRIMARY KEY ([PassengerID])
+    CONSTRAINT [PK_Passenger] PRIMARY KEY ([PassengerID]),
+    FOREIGN KEY ([TrainID]) REFERENCES [Train]([TrainID])
 );
 
 CREATE TABLE [Checks]
