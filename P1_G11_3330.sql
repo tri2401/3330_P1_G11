@@ -15,7 +15,7 @@ CREATE TABLE [Passenger]
 
 CREATE TABLE [Checks]
 (
-    [PassengerID] INTEGER NOT NULL,
+    [PassengerID] BIGINT NOT NULL,
 	[TrainID] INTEGER NOT NULL,
     FOREIGN KEY ([PassengerID]) REFERENCES [Passenger]([PassengerID]),
     FOREIGN KEY ([TrainID]) REFERENCES [Train]([TrainID])
@@ -57,7 +57,7 @@ CREATE TABLE [Train_Avail]
 
 CREATE TABLE [Booked]
 (
-	[PassengerID] INTEGER NOT NULL,
+	[PassengerID] BIGINT NOT NULL,
 	[TrainID] INTEGER NOT NULL,
 	[TicketType] VARCHAR(20),
 	[Status] VARCHAR(20),
